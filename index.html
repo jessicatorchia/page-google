@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageGoogle</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+        <header class="cabecalho">
+
+            <ul class="lista__cabecalho">
+                <li class="lista__cabecalho__item">
+                    <a href="https://mail.google.com/mail/u/0/#inbox" class="lista__cabecalho__item__link">Gmail</a>
+                </li>
+                <li class="lista__cabecalho__item">
+                    <a href="https://www.google.com.br/imghp?hl=pt-BR&ogbl" class="lista__cabecalho__item__link">Imagens</a>
+                </li>
+                <li class="lista__cabecalho__item">
+                    <a href="https://www.google.com.br/intl/pt-BR/about/products">
+                        <img src="img/app.jpg" alt="app" class="cabecalho__app">
+
+                </li>
+                <li class="lista__cabecalho__item">
+                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1728662949%3A1685554272294404&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=pt-BR&flowName=GlifWebSignIn&flowEntry=AddSession">
+                        
+                        <img src="img/foto.jpg" alt="foto do usuario" class="cabecalho__foto">
+
+                    </a>
+                </li>
+            </ul>
+
+        </header>
+
+    <div class="corpo">
+
+        <section class="conteudo">
+
+            <img src="img/logo.png" alt="logo do google" class="conteudo__logo">
+
+            <div class="conteudo__busca">
+
+                <div class="conteudo__lupa">
+                    <img src="img/lupa.jpg" alt="lupa">
+                </div>
+
+                <input type="search" class="conteudo__caixa__de__texto" placeholder="Pesquise no Google ou digite um URL">
+
+                <div class="conteudo__teclado">
+                    <img src="img/teclado.jpg" alt="teclado">
+                </div>
+
+                <div class="conteudo__teclado">
+                    <img src="img/microfone.jpg" alt="microfone">
+                </div>
+
+                <div>
+                    <img src="img/camera.jpg" alt="camera">
+                </div>
+
+            </div>
+           
+            <div class="botoes">
+                
+                <a href="#" class="conteudo__botao">Pesquisa Google</a>
+                
+                <a href="https://www.google.com/doodles" class="conteudo__botao">Estou com sorte</a>
+                
+            </div>
+            
+        </section>
+    </div>
+
+    <script>
+        function mudaStatusMenu() {
+            const menu = document.querySelector('.lista__menu')
+            if(menu.style.display != 'none') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+
+    <footer class="rodape">
+
+        <div class="container1__rodape">Brasil</div>
+
+        <div class="container2__rodape">
+            <ul class="itens__rodape__lado__esquerdo">
+                <a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1" class="itens__rodape__link">Sobre</a>
+                <a href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="itens__rodape__link">Publicidade</a>
+                <a href="https://smallbusiness.withgoogle.com/intl/pt-BR_br/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=ww-ww-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u&c=BR#!/" class="itens__rodape__link">Negócios</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1" class="itens__rodape__link">Como funciona a Pesquisa</a>
+            </ul>
+            <ul class="itens__rodape__lado__direito">
+                <a href="https://policies.google.com/privacy?hl=pt-BR&fg=1" class="itens__rodape__link">Privacidade</a>
+                <a href="https://policies.google.com/terms?hl=pt-BR&fg=1" class="itens__rodape__link">Termos</a>
+                
+                <div class="container__menu"></div>
+                    <li class="itens__rodape__link" onclick="mudaStatusMenu()">Configurações</li>
+                    <ul class="lista__menu">
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Configirações de Pesquisa</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Pesquisa avançada</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Seus dados na Pesquisa</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Histórico de pesquisa</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Ajuda da Pesquisa</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Enviar feedback</a>
+                        </li>
+                        <li class="lista__menu__item">
+                            <a href="#" class="lista__menu__link">Tema escuro: desativado</a>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

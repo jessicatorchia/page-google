@@ -1,0 +1,33 @@
+@import url("styles/header.css");
+@import url("styles/footer.css");
+@import url("styles/conteudo.css");
+
+:root{
+    --fonte-cabecalho: arial, sans-serif;
+    --cor-de-fundo-branco: #fff;
+    --cor-da-fonte-principal: #202124;                   
+    --cor-da-fonte-secundaria: #70757A;
+    --cor-da-fonte-botao:#3c4043;
+    --cor-do-botao-cinza: #F8F9FA;
+    --cor-do-rodape-cinza: #F2F2F2;
+}
+
+body{
+    background-color: var(--cor-de-fundo-branco);
+    color: var(--cor-da-fonte-principal);
+    font-family: var(--fonte-cabecalho);
+    font-size: 16px;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1
+}

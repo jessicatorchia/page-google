@@ -1,0 +1,114 @@
+hr{
+    margin: 0;
+}
+
+.rodape{
+    color: var( --cor-da-fonte-secundaria);
+    font-family: var(--fonte-cabecalho);
+    font-size: 15px;
+    background-color: var(--cor-do-rodape-cinza);   
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}   
+
+
+
+.container1__rodape{
+    padding: 15px 30px 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.container2__rodape{
+    padding: 15px 30px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.itens__rodape__lado__esquerdo{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.itens__rodape__lado__direito{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.itens__rodape__link{
+    text-decoration: none;
+    color: var( --cor-da-fonte-secundaria);
+    font-family: var(--fonte-cabecalho);
+    font-size: 15px;
+}
+
+.itens__rodape__link:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.container__botao:checked~ .lista-menu {
+
+    /* detecta se está preenchido o display e aparece a lista menu caso esteja clicado */
+    display: block;
+}
+
+.container__rotulo{
+
+}
+
+.container__menu{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* o position relative dá a opção de colocar outros atributos em cima, baixo ,lado 
+    assim posso usar o position absolute na lista-menu*/
+    position: relative;
+}
+
+.cabecalho__menu__configuracoes{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.lista__menu{
+    /* position absolute  permite que você movimente o seu elemento de acordo com outro 
+    que veio antes, ou que é o pai, que esteja a position diferente de static que é a padrão. 
+    Eu queria que ele se movimentasse de acordo com cabeçalho. */
+    position: absolute;
+    /* aqui está determinando que a lista do menu vai ficar acima (botton) do menu
+    tirando 100% para cima do footer na parte onde está o checked */
+    bottom: 70%;
+    right: 3%;
+    display: none;
+
+}
+
+.lista__menu__titulo,
+.lista__menu__item{
+    /* espaçamento da lista de menu */
+    padding: 0.5em
+
+    
+}  
+
+.lista__menu__link{
+    text-decoration: none;
+    color: var( --cor-da-fonte-principal);
+    font-family: var(--fonte-cabecalho);
+    font-size: 15px;
+}
+
+
+
+

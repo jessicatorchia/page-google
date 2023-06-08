@@ -1,0 +1,88 @@
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 175px;
+    gap: 16px
+}
+
+
+.conteudo__logo{
+    width: 272px; /* largura desejada */
+    height: 92px; /* altura desejada */
+    
+}
+
+
+
+.conteudo__busca{
+    border: 1px solid #dfe1e5;
+    color: var(--branco);
+    border-radius: 24px;
+    padding: 0.5em;
+    width: 572px;
+    height: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+
+
+
+.botoes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.conteudo__botao{
+    font-family: var(--fonte-cabecalho);
+    color: var(--cor-da-fonte-botao);
+    font-size: 14px;
+    text-decoration: none;
+    background-color: var(--cor-do-botao-cinza);
+    padding: 8px 16px; 
+    border-radius: 5px;
+    border: 2px solid var(--cor-do-botao-cinza);
+    
+
+}
+
+.conteudo__botao:hover{
+    border: 1px solid #dadce0;
+   
+}
+
+.conteudo__caixa__de__texto{
+    /* flex: 1 é utilizada em um contexto de flexbox 
+    para especificar que um elemento deve crescer ou 
+    encolher para preencher o espaço disponível dentro do contêiner flexível. */
+    flex: 1;
+    border: none;
+    background: none;
+    height: 30px;
+
+}
+
+
+/* para remover a borda da caixa de input ao clicar nela */
+.conteudo__caixa__de__texto:focus {
+    outline: none;
+}
+
+/* para remover o x da caixa de input */
+.conteudo__caixa__de__texto::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+  }
+
+.conteudo__busca:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
